@@ -1,0 +1,90 @@
+-- 1.회원정보 테이블
+create table unitt_member (
+      id varchar2(50) not null,
+      password varchar2(50) not null,
+      name varchar2(50) not null unique,
+      phone_number number(11) not null,
+      email varchar2(50) not null unique,
+      question varchar2(200) not null,
+      answer varchar2(100) not null,
+      interest varchar2(500) null,
+      introduce varchar2(500) null,
+      CONSTRAINT pk_id PRIMARY KEY(id)
+);
+
+-- 2.강좌게시판 테이블
+create table unitt_courseboard (
+      courseboard_idx number primary key,
+      member_id varchar2(50) not null,
+      category varchar2(30),
+      title varchar2(30) not null unique,
+      content varchar2(2000) not null,
+      image varchar2(200),
+      shot_introduce varchar2(20),
+      plan varchar2(300),
+      CONSTRAINT fk_Bid FOREIGN KEY(member_id)
+      REFERENCES unitt_member(id)
+);
+
+-- 3.동영상목록 테이블
+create table unitt_videolist (
+      videolist_idx number primary key,
+      member_id varchar2(50) not null,
+      courseboard_idx number not null,
+      title varchar2(30) not null unique,
+      mp4_path varchar2(200) unique,
+      webm_path varchar2(200) unique,
+      content varchar2(2000),
+      CONSTRAINT fk_Vid FOREIGN KEY (member_id)
+      REFERENCES unitt_member(id),
+      CONSTRAINT fk_Vcourseboard_idx FOREIGN KEY (courseboard_idx)
+      REFERENCES unitt_courseboard(courseboard_idx)
+);
+
+-- 4.조회/추천수 테이블
+create table unitt_boardcount_like (
+      courseboard_idx number not null,
+      board_count number default 0 not null,
+      board_like number default 0 not null,
+      CONSTRAINT fk_Ccourseboard_idx FOREIGN KEY (courseboard_idx)
+      REFERENCES unitt_courseboard(courseboard_idx)
+);
+
+-- 5.강좌문의/답변 테이블
+create table unitt_boardreview (
+      boardreview_idx number primary key,
+      gno number,
+      ono number,
+      nested number,
+      courseboard_idx number not null,
+      member_id varchar2(50) not null,
+      name varchar2(30) not null,
+      title varchar2(100),
+      content varchar2(4000),
+      wdate varchar2(50),
+      readno number,
+      pseq number default 0,
+      reply number default 0,
+      CONSTRAINT fk_Rid FOREIGN KEY (member_id)
+      REFERENCES unitt_member(id),
+      CONSTRAINT fk_Rcourseboard_idx FOREIGN KEY (courseboard_idx)
+      REFERENCES unitt_courseboard(courseboard_idx)
+);
+
+-- 6.공지사항
+create table unitt_notice (
+      notice_idx number primary key,
+      name varchar2(30) not null,
+      gno number default 0 not null,
+      title varchar2(100),
+      content varchar2(4000),
+      wdate varchar2(50),
+      readno number
+);
+
+-- 7.QnA
+create table unitt_qna (
+      qna_idx number primary key,
+      question VARCHAR2(200),
+      answer VARCHAR2(4000)
+);

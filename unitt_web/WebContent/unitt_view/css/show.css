@@ -1,0 +1,348 @@
+/**
+ ** Referencing this Pen:
+ ** http://codepen.io/ksneaux/pen/jEXrLq
+ ** By: Kyle Sneaux
+**/
+
+@import "bourbon";
+
+body {
+  background-color: #fff;
+  overflow-x: hidden;
+  font-family: 'Open Sans Condensed', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+  -webkit-backface-visibility: hidden;
+  line-height: 1.25;
+}
+
+*, *:after, *:before {
+	@include box-sizing(border-box);
+}
+
+#container {
+  position: relative;
+  width: 1024px;
+  height: 526px;
+  margin: 25px auto 75px;
+
+  .content-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 1024px;
+    height: 100%;
+    opacity: 0;
+    background: rgba(0,0,0,.7);
+    @include transition(opacity 1s, height 1s);
+
+    .selection-container {
+      position: absolute;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+      @include transition(height .5s ease-in);
+    }
+
+    &.active {
+
+      &.network-connection {
+        opacity: 1;
+        height: 576px;
+
+        .selection-container {
+          position: absolute;
+          padding: 0 25px;
+          width: 700px;
+          height: 300px;
+          top: 50%;
+          left: 50%;
+          opacity: 1;
+          margin: -150px 0 0 -350px;
+          background: rgba(255,255,255,.9);
+
+          h2 {
+            display: block;
+            font-size: 25px;
+            line-height: 30px;
+          }
+
+          .network {
+            display: block;
+            cursor: pointer;
+            padding: 10px;
+            background: #fff;
+            font-size: 20px;
+            @include transition(background .5s ease-in-out);
+
+            &:hover {
+              background: #ccc;
+            }
+
+            &.wrong {
+              background: #c00;
+              color: #fff;
+            }
+
+            &.correct {
+              background: #060;
+              color: #fff;
+            }
+          }
+
+          p {
+            display: block;
+            text-align: center;
+            font-size: 15px;
+            line-height: 25px;
+
+            &.red {
+              color: #c00;
+            }
+            &.green {
+              color: #060;
+            }
+          }
+        }
+
+
+      }
+
+      &.learn-more {
+        opacity: 1;
+        height: 576px;
+        background: rgba(0,0,0,.5);
+
+        .cta-container {
+          width: 110px;
+          height: 110px;
+          position: absolute;
+          left: 30%;
+          top: 61%;
+          margin: -55px 0 0 -55px;
+          cursor: pointer;
+        }
+
+        .outerCircle {
+          background-color: transparent;
+          border: 8px solid white;
+          border-right: 5px solid transparent;
+          border-bottom: 5px solid transparent;
+          border-radius: 50%;
+          width: 110px;
+          height: 110px;
+          margin: 0 auto;
+          -moz-animation: spinCounterclockwise 2s infinite linear;
+          -webkit-animation: spinCounterclockwise 2s infinite linear;
+          animation: spinCounterclockwise 2s infinite linear;
+        }
+
+        .middleCircle {
+          background-color: transparent;
+          border: 2px solid white;
+          border-radius: 50%;
+          top: -107px;
+          width: 85px;
+          height: 85px;
+          margin: 0 auto;
+          position: relative;
+        }
+
+        .centerPin {
+          border-top: 25px solid white;
+          border-bottom: 25px solid white;
+          border-left: 25px solid white;
+          border-right: 25px solid white;
+          border-radius: 50% 50% 50% 0;
+          height: 0;
+          width: 0;
+          margin: 17px 0 0 17px;
+          -moz-animation: spinClockwise 3s infinite linear;
+          -webkit-animation: spinClockwise 3s infinite linear;
+          animation: spinClockwise 3s infinite linear;
+        }
+
+        .centerPin:after {
+          background: #0a0;
+          border-radius: 50%;
+          content: "";
+          height: 35px;
+          width: 35px;
+          left: 50%;
+          margin: -17px 0px 0px -18px;
+          position: absolute;
+          top: 50%;
+        }
+
+        @-moz-keyframes spinCounterclockwise {
+          to { -moz-transform: rotate(0deg); }
+          from { -moz-transform: rotate( -360deg); }
+        }
+
+        @-webkit-keyframes spinCounterclockwise {
+          to { -webkit-transform: rotate(0deg); }
+          from { -webkit-transform: rotate(-360deg); }
+        }
+
+        @-o-keyframes spinCounterclockwise {
+          to { -webkit-transform: rotate(0deg); }
+          from { -webkit-transform: rotate(-360deg); }
+        }
+
+        @keyframes spinCounterclockwise {
+          to { transform: rotate(0deg); }
+          from { transform: rotate(-360deg); }
+        }
+
+        @-moz-keyframes spinClockwise {
+          to { -moz-transform: rotate(0deg); }
+          from { -moz-transform: rotate(360deg); }
+        }
+
+        @-webkit-keyframes spinClockwise {
+          to { -webkit-transform: rotate(0deg); }
+          from { -webkit-transform: rotate(360deg); }
+        }
+
+        @-o-keyframes spinCounterclockwise {
+          to { -webkit-transform: rotate(0deg); }
+          from { -webkit-transform: rotate(360deg); }
+        }
+
+        @keyframes spinClockwise {
+          to { transform: rotate(0deg); }
+          from { transform: rotate(360deg); }
+        }
+
+        .learn-more-container {
+          opacity: 0;
+          @include transition(opacity 1s);
+
+          &.active {
+            opacity: 1;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 700px;
+            height: 300px;
+            margin: -150px 0 0 -350px;
+            background: rgba(255,255,255,.95);
+            padding: 25px;
+
+            p {
+              font-size: 18px;
+              line-height: 25px;
+            }
+
+            .view-demo-button {
+              padding: 10px;
+              text-align: center;
+              background: #f63e28;
+              color: #fff !important;
+              margin: 25px 0;
+              display: block;
+              cursor: pointer;
+              text-decoration: none;
+              &:visited, &:active {
+                color: #fff;
+              }
+              &:hover {
+                background: lighten(#f63e28, 10%);
+              }
+            }
+          }
+        }
+      }
+
+
+      &.phone-call {
+        opacity: 1;
+        height: 576px;
+        background: rgba(0,0,0,.5);
+
+        .button {
+          position: absolute;
+          padding: 10px 20px;
+          text-transform: uppercase;
+          cursor: pointer;
+
+          &.answer {
+            background: #0a0;
+            color: #fff;
+            font-weight: bold;
+            top: 70%;
+            left: 32%;
+            &:after{
+              content: "";
+              position: absolute;
+              right: -20px;
+              top: 0;
+              border-top: 20px solid transparent;
+              border-bottom: 20px solid transparent;
+              border-left: 20px solid #0a0;
+            }
+          }
+
+          &.decline {
+            background: #600;
+            color: #fff;
+            font-weight: bold;
+            top: 57%;
+            left: 71%;
+
+            &:before{
+              content: "";
+              position: absolute;
+              left: -20px;
+              top: 0;
+              border-top: 20px solid transparent;
+              border-bottom: 20px solid transparent;
+              border-right: 20px solid #600;
+            }
+          }
+        }
+      }
+
+      &.centerline-ending {
+        opacity: 1;
+        height: 576px;
+        background: rgba(255,255,255,1);
+
+        img {
+          width: 500px;
+          height: 78px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin: -39px 0 0 -250px;
+        }
+      }
+    }
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.text-container {
+  width: 1026px;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 24px;
+    line-height: 35px;
+    color: #003f69;
+    border-bottom: 1px solid #666;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 25px;
+    color: #666;
+  }
+}

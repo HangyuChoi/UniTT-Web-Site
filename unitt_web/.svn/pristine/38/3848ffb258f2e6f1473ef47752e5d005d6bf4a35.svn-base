@@ -1,0 +1,9 @@
+#
+uploadCheck=command.video.UploadCheckService
+upload=command.video.UploadService
+#
+show=command.video.ViewerService
+listShow=command.video.ViewerListService
+
+
+

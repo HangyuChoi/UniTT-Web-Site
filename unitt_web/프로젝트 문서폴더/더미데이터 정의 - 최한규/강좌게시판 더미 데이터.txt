@@ -1,0 +1,131 @@
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '교육','Node.js 웹개발로 알아보는 백엔드 자바스크립트의 이해','윤지수','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '교육','뇌를 자극하는 윈도우즈 시스템 프로그래밍','한빛미디어','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '교육','쉽게 배우는 ZBrush 입문 강좌','목마하임(MokmaHeim)','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '교육','3DSMAX 입문부터 전문가까지 - 한방에 끝내는 3dsmax 강좌','목마하임(MokmaHeim)','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '교육','최백준의 알고리즘 기초','스타트링크','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '교육','Java 입문부터,안드로이드 개발까지 - 여러 앱 개발로 배워보는 안드로이드','오준석','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '교육','이것이 우분투 리눅스다','한빛미디어','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '교육','초보자를 위한 AWS 클라우드 시작하기','인프런','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', 'IT','엑셀을 활용한 업무자동화 - 비전공자를 위한 엑셀 VBA 프로그래밍','보안프로젝트','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', 'IT','빅데이터의 통찰력을 키워주는 엑셀 Quick Start','topmentor','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', 'IT','잘쓰는 기능만 쏙 뽑아 배우는 파워포인트 Quick Start','인프런','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', 'IT','한글 2014','이시아','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', 'IT','한쇼 2014','이시아','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', 'IT','MS Access2000','권진호','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', 'IT','MS Access2013','김미정','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '스포츠','[스포츠지도사 자격증 대비] - 스포츠심리학 샘플강의','김윤지','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '스포츠','[KG패스원] 스포츠지도사 3주면 된다','최원섭','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '스포츠','탁구자세의 대한 기본이론','탁구왕김탁구','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '스포츠','수영의 기초','마린보이','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '스포츠','최대욱 검도 스포츠 강의','최대욱','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '스포츠','노인체육이론','김윤지','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '스포츠','스포츠심리학','이채문','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '게임','체스의 기본과 규칙','체스마왕','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '게임','주사위의 신이되는 마술 강의','니키','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '게임','스타크래프트 토스전강의','이영호','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '게임','스타크래프트2 저그 vs 테란','마무리','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '게임','헤카림 라인전 강의','게임코치','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '게임','3900점 겐지 선생의 강의','수리부엉이','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '게임','징크스 섬세강의','이석현','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '음악','음악기초이론 강의','이혜화','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '음악','중학교 음악','김하연','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '음악','발성의 기초','소음공해','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '음악','보컬강의','소음공해','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '음악','작곡강의','솔로작곡가','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '음악','작사강의','솔로작곡가','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '음악','음정 강의','소음공해','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '음악','클래식강의','그랜드피아노','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '기타','초급 이태리 요리 강의','레시피','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '기타','맛있는 비빔밥만들기','레시피','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '기타','맛있는 라면끓이기','레시피','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '기타','주식투자하기(차트분석)','나처럼','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '기타','주식강의','나처럼','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '기타','독후감 발표요령','초딩','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '기타','논리적으로 글쓰기','유시민','image패스','하단글귀','계획');
+
+
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '게임','주사위의 신이되는 마술 강의','니키','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '게임','스타크래프트 토스전강의','이영호','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '게임','스타크래프트2 저그 vs 테란','마무리','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '게임','헤카림 라인전 강의','게임코치','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '게임','3900점 겐지 선생의 강의','수리부엉이','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '게임','징크스 섬세강의','이석현','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '음악','음악기초이론 강의','이혜화','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '음악','중학교 음악','김하연','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '음악','발성의 기초','소음공해','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '음악','보컬강의','소음공해','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '음악','작곡강의','솔로작곡가','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '음악','작사강의','솔로작곡가','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '음악','음정 강의','소음공해','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '음악','클래식강의','그랜드피아노','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '기타','초급 이태리 요리 강의','레시피','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '기타','맛있는 비빔밥만들기','레시피','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '기타','맛있는 라면끓이기','레시피','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '기타','주식투자하기(차트분석)','나처럼','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '기타','주식강의','나처럼','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '기타','독후감 발표요령','image패스','하단글귀','계획');
+
+insert into unitt_courseboard values (courseboard_idx.nextval,'root', '관리자', '기타','논리적으로 글쓰기','유시민','image패스','하단글귀','계획');

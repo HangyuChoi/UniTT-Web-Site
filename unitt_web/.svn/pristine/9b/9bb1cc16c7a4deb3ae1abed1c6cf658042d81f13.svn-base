@@ -1,0 +1,4 @@
+search=command.category.CategoryService
+#search_Arr_Test=command.category.CategoryService_Multidimensional_Array_Test
+view=command.category.ViewService
+#register=command.member.RegisterService
